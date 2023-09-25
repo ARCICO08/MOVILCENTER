@@ -14,7 +14,7 @@ console.log(hobbies[1]);
 			<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 			<meta name="viewport" content="width=device-width" />
 			<meta name="generator" content={Astro.generator} />
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-dZ0f6imvR0FaRUHaPpdKTULuiXKgMbDWTLG6mcD0sF+4wGdg1C1C+9IsC6jdtRzh0SmYs0o6m7j6PKYlVhON/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 			<title>MOVILCENTER</title>
 		</head>
 		<body>
@@ -24,14 +24,20 @@ console.log(hobbies[1]);
 		
 
 			<div class="barra-1">		
-				<img src="logomc.png" class="imagen">
-				<h1>MOVILCENTER</h1>
+        <div class="alig">
+         				<img src="logomc.png" class="imagen">
+			        	<h1>MOVILCENTER</h1> 
+        </div>
 				<input type="text" placeholder="Busca tu producto" class="search">
-				<h4>Inicio</h4>
-				<h4>Ayuda</h4>
-
-				
+        <div class="help">
+          <h4>INICIO</h4>
+          <h4><i class="fa-solid fa-magnifying-glass"></i>AYUDA</h4>
+        </div>
 			</div>
+
+
+
+
 		</body>
 	</html>
 
@@ -74,8 +80,29 @@ console.log(hobbies[1]);
     .search {
       font-size: 32px;
       padding: 0;
+      width: 20%;
+      border-radius: 12px;
 	  
 	
+    }
+
+    .alig {
+      display: flex;
+      
+    }
+
+    h1 {
+       margin-top: 2.5rem;
+       margin-right: -90px;  
+    }
+
+    .help{
+      display: flex;
+      font-size: 20px;
+      color: white;
+      width: 400px;
+      justify-content: space-around;
+      
     }
 
 	</style>
