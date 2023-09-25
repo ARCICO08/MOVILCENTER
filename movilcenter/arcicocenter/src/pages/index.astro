@@ -1,0 +1,81 @@
+---
+const nombre = 'bienvenidos a Astro'
+const pasatiempos = 'hobbies'
+const hobbies = ['programar', 'escribir', 'nadar', 'leer', 'voley']
+console.log(hobbies[1]);
+
+
+---
+
+
+	<html lang="en">
+		<head>
+			<meta charset="utf-8" />
+			<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+			<meta name="viewport" content="width=device-width" />
+			<meta name="generator" content={Astro.generator} />
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+			<title>MOVILCENTER</title>
+		</head>
+		<body>
+
+	
+
+		
+
+			<div class="barra-1">		
+				<img src="logomc.png" class="imagen">
+				<h1>MOVILCENTER</h1>
+				<input type="text" placeholder="Busca tu producto" class="search">
+				<h4>Inicio</h4>
+				<h4>Ayuda</h4>
+
+				
+			</div>
+		</body>
+	</html>
+
+	<style>
+
+	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital@1&display=swap');
+
+
+		body {
+      background-color: rgb(229, 222, 222);
+      text-align: center;
+    }
+
+    .barra-1 {
+      background-color: #FE6D41;
+      height: 100px;
+      width: 100%;
+      margin-top: 2rem;
+      display: flex; /* Utilizamos flexbox para alinear horizontalmente */
+      justify-content: space-evenly; /* Centramos los elementos horizontalmente */
+      align-items: center; /* Centramos los elementos verticalmente */
+    }
+
+    .imagen {
+      width: 100px;
+      height: 100px;
+	 
+    }
+
+    h1 {
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+	
+    }
+
+    img {
+      margin-top: 3px;
+    }
+
+    .search {
+      font-size: 32px;
+      padding: 0;
+	  
+	
+    }
+
+	</style>
